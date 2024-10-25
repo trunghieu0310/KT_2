@@ -58,7 +58,7 @@
                         $username = "root";
                         $server = "localhost";
                         $database = "db_nguyen_trung_hieu";
-                        $password = "123456"; 
+                        $password = ""; 
 
                         $conn = new mysqli($server, $username, $password, $database);
 
@@ -130,7 +130,7 @@
 
             <?php
             // Kết nối tới database để hiển thị danh sách Course
-            $conn = new mysqli("localhost", "root", "123456", "db_nguyen_trung_hieu");
+            $conn = new mysqli("localhost", "root", "", "db_nguyen_trung_hieu");
 
             if ($conn->connect_error) {
                 die('Connect failed: ' . $conn->connect_error);
